@@ -15,6 +15,7 @@ mongoose.connect("mongodb+srv://olucashie:Testimony@cluster0.hhk1m4t.mongodb.net
 });
 
 const app = express();
+app.use(express.json())
 
 app.listen(3000, () => {
     console.log('Server is running on http://localhost:3000!!');
